@@ -1,0 +1,48 @@
+﻿HCMUAF 2016 (GIUA KY)
+MON LAP TRINH CO BAN
+THOI GIAN: 110 PHUT
+
+SET 1:
+	
+	Câu 1: (3 điểm)
+	- Cho số nguyên n.
+	a) Kiểm tra số đó có phải là một số nguyên tố hay không.
+	b) Phân tích số n ra các thừa số nguyên tố.
+
+	Câu 2: (2 điểm)
+	- Cho dãy gồm n số nguyên. Hãy xác định dãy có đan dấu hay không.
+	vd dãy sau là dãy đan dấu: 2 -1 7 -3 4 -5 6.
+
+	Câu 3: (2 điểm)
+	- Cho ma trận vuông cấp n gồm các số nguyên.
+	a) In ma trận ra màn hình.
+	b) Kiểm tra ma trận có đối xứng qua đường chéo chính hay không.
+
+	Câu 4: (3 điểm)
+	- Cho chuỗi s.
+	a) Hãy mã hóa chuỗi s bằng cách dịch chuyển các ký tự trong chuỗi s tiến lên k vị trí trong bảng chữ cái. Chỉ mã hóa với các kí tự trong khoảng: a-z; A-Z; 0-0. Các kí tự khác giữ nguyên
+	b) In chuỗi s sau khi mã hóa ra màn hình.
+
+SET 2:
+
+	Câu 1: (3 điểm)
+	- Cho số nguyên n.
+	a) Đếm số chữ số của số n.
+	b) Tìm số đảo ngược của số n.
+
+	Câu 2: (2 điểm)
+	- Cho dãy(1) gồm n số nguyên.
+	- Cho số nguyên x.
+	a) Loại bỏ khỏi dãy tất cả các phần tử có giá trị bằng x. (ta được dãy(2))
+	b) In (1) và (2) ra màn hình.
+
+	Câu 3: (2 điểm)
+	- Cho ma trận các số nguyên kích thước m*n.
+	a) In ma trận ra màn hình.
+	b) Tính tổng từng dòng của ma trận để tìm và xuất ra dòng có tổng lớn nhất.
+
+	Câu 4: (3 điểm)
+	- Cho chuỗi s.
+	a) Hãy mã hóa chuỗi s bằng cách dịch chuyển các ký tự trong chuỗi s lùi lại k vị trí trong bảng chữ cái. Chỉ mã hóa với các kí tự trong khoảng: a-z; A-Z; 0-0. Các kí tự khác giữ nguyên
+	b) In chuỗi s sau khi mã hóa ra màn hình.
+
