@@ -2,21 +2,18 @@
 
 Phương trình bậc hai là phương trình có dạng $$ax^2+bx+c=0.$$
 
-## Công thức nghiệm với $a\ne 0$
+## Công thức nghiệm với a khác 0
 
 Biệt thức $\Delta=b^2-4ac$
 
-+ Nếu $\Delta<0$ thì phương trình vô nghiệm.
++ Nếu $\Delta \lt 0$ thì phương trình vô nghiệm.
    
 + Nếu $\Delta=0$ thì phương trình có nghiệm kép: $x_1=x_2=\frac{-b}{2a}.$
 
-+ Nếu $\Delta>0$ thì phương trình có hai nghiệm phân biệt:
-   $$
-   x_1=\frac{-b-\sqrt{\Delta}}{2a}
-   $$
-   $$
-   x_2=\frac{-b+\sqrt{\Delta}}{2a}
-   $$
++ Nếu $\Delta \gt 0$ thì phương trình có hai nghiệm phân biệt:
+   $$x_1=\frac{-b-\sqrt{\Delta}}{2a}$$
+   
+   $$x_2=\frac{-b+\sqrt{\Delta}}{2a}$$
 
 hoặc 
 
@@ -26,12 +23,9 @@ Biệt thức $\Delta'=b'^2-ac$ (với số b chẵn)
 + Nếu $\Delta'=0$ thì phương trình có nghiệm kép: $x_1=x_2=\frac{-b'}{a}.$
 
 + Nếu $\Delta'>0$ thì phương trình có hai nghiệm phân biệt
-   $$
-   x_1=\frac{-b-\sqrt{\Delta'}}{a}
-   $$
-   $$
-   x_2=\frac{-b+\sqrt{\Delta'}}{a}
-   $$
+   $$x_1=\frac{-b-\sqrt{\Delta'}}{a}$$
+
+   $$x_2=\frac{-b+\sqrt{\Delta'}}{a}$$
 		
 
 ## Công thức nghiệm với $a=0$

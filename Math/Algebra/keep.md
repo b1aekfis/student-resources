@@ -10,7 +10,7 @@
 - [Radian](#radian)
 - [Hàm mũ](#hàm-mũ)
 - [Tham số và đối số của hàm số](#tham-số-và-đối-số-của-hàm-số)
-- [Vô cùng $\infty$ (Infinity)](#vô-cùng-infty-infinity)
+- [Vô cùng (Infinity)](#vô-cùng-infinity)
 - [Phân tích đa thức thành nhân tử (factorisation)](#phân-tích-đa-thức-thành-nhân-tử-factorisation)
 
 # Trục số
@@ -19,7 +19,7 @@ Trục hay trục số là hình ảnh một đường thẳng được sử d�
 
 # Mệnh đề toán học
 
-Một mênh đề là một phát biểu khẳng định một sự kiện có tính luận lý (logic) là *"đúng"* hoặc *"sai"*.
+Một mênh đề là một phát biểu khẳng định một sự kiện có tính luận lý (logic) là "*đúng*" hoặc "*sai*".
 
 # Biểu thức
 
@@ -32,10 +32,10 @@ Biểu thức hay biểu thức toán học là một thuật ngữ dùng để 
 # Bất đẳng thức
 
 Bất đẳng thức là các mệnh đề toán học có dạng:
-+ Dạng nghiêm ngặt: $A<B$; $A>B$.
++ Dạng nghiêm ngặt: $A \lt B$; $A \gt B$.
 + Dạng không nghiêm ngặt: $A \leq B$; $A \geq B$.
 
-Chứng minh bất đẳng thức đúng với giá trị của các biến $\in$ một tập hợp cho trước, đó là bài toán chứng minh bất đẳng thức.
+Chứng minh bất đẳng thức đúng với giá trị của các biến thuộc một tập hợp cho trước, đó là bài toán chứng minh bất đẳng thức.
 
 # Phương trình (Equation)
 
@@ -49,14 +49,14 @@ Tìm tập các giá trị (tập nghiệm) của các biến số để bất �
 
 # Giá trị tuyệt đối
 
-Giá trị tuyệt đối (absolute value) của một số thực là khoảng cách của số thực đó đến số 0 trên đường thẳng thực. Tổng quát hơn, giá trị tuyệt đối giữa hiệu hai số thực khác nhau là khoảng cách giữa chúng trên đường thẳng thực: $|5-3| = |3-5| = 2$ (khoảng cách giữa 5 và 3).
+Giá trị tuyệt đối (absolute value) của một số thực là khoảng cách của số thực đó đến số 0 trên đường thẳng thực. Tổng quát hơn, giá trị tuyệt đối giữa hiệu hai số thực khác nhau là khoảng cách giữa chúng trên đường thẳng thực: $\vert 5-3 \vert = \vert 3-5 \vert = 2$ (khoảng cách giữa 5 và 3).
 
 # Số vô tỉ
 
-là số thực không phải là số hữu tỉ, nghĩa là không thể biễu diễn được dưới dạng tỉ số $ \frac{a}{b} (a, b \in \mathbb{Z} ; b \neq 0)$. Tập hợp số vô tỉ ký hiệu là $\mathbb{I} = \{ n | n \neq \frac{m}{n}, ∀ m ∈ Z, ∀n ∈ \mathbb{Z^*} \}$. Nếu như mọi số hữu tỉ đều có biễu diễn thập phân hoặc hữu hạn hoặc vô hạn tuần hoàn thì số vô tỉ có biễu diễn thập phân vô hạn nhưng không tuần hoàn:
+là số thực không phải là số hữu tỉ, nghĩa là không thể biễu diễn được dưới dạng tỉ số $\frac{a}{b} (a, b \in \mathbb{Z} ; b \neq 0)$. Tập hợp số vô tỉ ký hiệu là $\mathbb{I} = \lbrace n \mid n \neq \frac{m}{n}, \forall m \in \mathbb{Z}, \forall n \in \mathbb{Z^*} \rbrace$. Nếu như mọi số hữu tỉ đều có biễu diễn thập phân hoặc hữu hạn hoặc vô hạn tuần hoàn thì số vô tỉ có biễu diễn thập phân vô hạn nhưng không tuần hoàn:
 + Thập phân hữu hạn: $\frac{1}{2} = 0.5$
 + Thập phân vô hạn tuần hoàn: $\frac{1}{11} = 0.09090909...$
-+ Thập phân vô hạn không tuần hoàn: $π = 3.141592653589...$
++ Thập phân vô hạn không tuần hoàn: $\pi = 3.141592653589...$
 
 # Radian
 
@@ -70,7 +70,9 @@ $r$: bán kính
 
 Do là tỉ số giữa hai chiều dài nên radian là giá trị không thứ nguyên.
 
-$\Rightarrow$ Độ lớn góc tính bằng radian của một vòng tròn $(360^o)$ là bằng chiều dài chu vi chia cho bán kính: $$ R = \frac{C}{r} = \frac{C}{2\pi} $$
+$\Rightarrow$ Độ lớn góc tính bằng radian của một vòng tròn $(360^o)$ là bằng chiều dài chu vi chia cho bán kính: 
+
+$$R = \frac{C}{r} = \frac{C}{2\pi}$$
 
 # Hàm mũ
 
@@ -78,18 +80,18 @@ Hàm mũ: hàm số có dạng: $y=a^x$, với $a$ là cơ số dương khác 1.
 
 # Tham số và đối số của hàm số
 
-Trong toán học, sự khác nhau giữa một *"tham số (parameter)"* và một *"đối số (argument)"* của một hàm là: 
+Trong toán học, sự khác nhau giữa một "*tham số (parameter)*" và một "*đối số (argument)*" của một hàm là: 
 
-*"Tham số"* là các ký hiệu thuộc phần định nghĩa của hàm, trong khi các *"đối số"* là các ký hiệu được cung cấp cho hàm khi nó được dùng.
+*Tham số* là các ký hiệu thuộc phần định nghĩa của hàm, trong khi các *đối số* là các ký hiệu được cung cấp cho hàm khi nó được dùng.
 
-Ví dụ một hàm có phần định nghĩa như sau: $f(x)=x-1$, trong đó $x$ là *"tham số"* duy nhất của hàm. Khi hàm được sử dụng:
-$f(a)=a-1, f(b)=b-1, f(c)=c-1,...$ khi đó $x=a,x=b,x=c,...$ được gọi là các *"đối số"*.
+Ví dụ một hàm có phần định nghĩa như sau: $f(x)=x-1$, trong đó $x$ là *tham số* duy nhất của hàm. Khi hàm được sử dụng:
+$f(a)=a-1, f(b)=b-1, f(c)=c-1,...$ khi đó $x=a,x=b,x=c,...$ được gọi là các *đối số*.
 
-Như vậy, hàm $f(x)$ trên định nghĩa thì có một tham số duy nhất là $x$ (hay cũng có thể được gọi là *"biến tổng quát"*), nhưng có thể có một hoặc rất nhiều đối số (khi hàm được dùng với mỗi một đối số cụ thể, khi đó đối số đó được gọi là *"biến độc lập"*).
+Như vậy, hàm $f(x)$ trên định nghĩa thì có một tham số duy nhất là $x$ (hay cũng có thể được gọi là *biến tổng quát*), nhưng có thể có một hoặc rất nhiều đối số (khi hàm được dùng với mỗi một đối số cụ thể, khi đó đối số đó được gọi là *biến độc lập*).
 
-# Vô cùng $\infty$ (Infinity)
+# Vô cùng (Infinity)
 
-Trên trục thực đại số, khái niệm *"vô cùng hay vô cực"* là một *kỹ thuật mô tả* chỉ sự kéo dài không bao giờ kết thúc của hai đầu trục thực, được viết kí hiệu là $\infty$, kí hiệu sáng tạo bởi nhà toán học John Wallis.
+Trên trục thực đại số, khái niệm "*vô cùng hay vô cực*" là một *kỹ thuật mô tả* chỉ sự kéo dài không bao giờ kết thúc của hai đầu trục thực, được viết kí hiệu là $\infty$, kí hiệu sáng tạo bởi nhà toán học John Wallis.
 
 Kí hiệu $+\infty$ (thường viết $\infty$) được đặt ở một đầu mũi tên trục để quy ước chiều của mũi tên đó là chiều dương, trong khi ở đầu mũi tên (ngược chiều) còn lại của trục được kí hiệu là $-\infty$ để đại diện cho chiều âm.
 

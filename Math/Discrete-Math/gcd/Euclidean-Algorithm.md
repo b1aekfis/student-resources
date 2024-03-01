@@ -1,6 +1,12 @@
+- [Ước số chung lớn nhất (*gcd*)](#ước-số-chung-lớn-nhất-gcd)
+- [Thuật toán Euclid](#thuật-toán-euclid)
+  - [tính toán *gcd* với các số nguyên dương](#tính-toán-gcd-với-các-số-nguyên-dương)
+  - [tính toán *gcd* với các số nguyên](#tính-toán-gcd-với-các-số-nguyên)
+  - [tính toán *gcd* của nhiều hơn hai số nguyên đầu vào](#tính-toán-gcd-của-nhiều-hơn-hai-số-nguyên-đầu-vào)
+
 # Ước số chung lớn nhất (*gcd*)
 
-Mối quan hệ chia hết trên tập số nguyên nói rằng: nếu $b$ $|$ $a$ thì: $-b$ $|$ $a$, với $-b$ gọi là số đối của $b.$ Vì vậy:
+Mối quan hệ chia hết trên tập số nguyên nói rằng: nếu $b \mid a$ thì: $-b \mid a$, với $-b$ gọi là số đối của $b.$ Vì vậy:
 
 *Ước số chung lớn nhất* ($gcd$) của hai hay nhiều số nguyên (có ít nhất một số trong số đó $\ne 0$) được định nghĩa là *số nguyên dương lớn nhất* là ước số chung của các số đó.
 
@@ -20,17 +26,17 @@ Trong trường hợp tất cả số nguyên đều bằng nhau thì $gcd$ củ
 
 Bằng chứng cho điều này trong một bối cảnh cụ thể:
 
-cho hai số nguyên dương $a$ và $b$ $(a>b)$, giả sử,  nếu $G$ được xác định là $gcd$ của $a$ và $b$:
+cho hai số nguyên dương $a$ và $b$ $(a \gt b)$, giả sử,  nếu $G$ được xác định là $gcd$ của $a$ và $b$:
 
 $$G=gcd(a,b)$$
 
-thì hiển nhiên tồn tại các số nguyên dương $e$ và $f$ là *các số nguyên tố cùng nhau (coprime integers)* thoả mãn các biểu thức $a=eG$ và $b=fG$ ($e$ và $f$ phải được xác định là các nguyên tố cùng nhau để không thể tồn tại một số $i$  là thừa số chung của chúng thoả mãn $iG>G$).
+thì hiển nhiên tồn tại các số nguyên dương $e$ và $f$ là *các số nguyên tố cùng nhau (coprime integers)* thoả mãn các biểu thức $a=eG$ và $b=fG$ ($e$ và $f$ phải được xác định là các nguyên tố cùng nhau để không thể tồn tại một số $i$  là thừa số chung của chúng thoả mãn $iG \gt G$).
 
 Theo đó, một mặt ta có được biểu thức $a-b=(e-f)G$, mặc khác hệ số $e-f$ trong biểu thức vừa có cũng không thể phân tích thành bất kì thừa số chung nào với $f$, vì vậy
 
-$\boxed{gcd(a-b,b)=G=gcd(a,b), \{ a,b \} \in \mathbb{Z}^{+}, a>b.}$
+$$\boxed{gcd(a-b,b)=G=gcd(a,b), \lbrace a,b \rbrace \in \mathbb{Z}^{+}, a \gt b.}$$
 
-***Hạn chế của thuật toán***: khi hai số có khoảng cách xa trên trục số, phải thực hiện rất nhiều số phép trừ cho đến khi đạt được cặp số bằng nhau. Chẳng hạn trường hợp với $1000$ và $7$ là cặp số đầu vào, độ hiệu quả của thuật toán về mặt thời gian được cho là khá tệ so với biến thể sau đây, biến thể sau đây thường được ưa thích hơn khi nói đến *"Thuật toán Euclid"*.
+***Hạn chế của thuật toán***: khi hai số có khoảng cách xa trên trục số, phải thực hiện rất nhiều số phép trừ cho đến khi đạt được cặp số bằng nhau. Chẳng hạn trường hợp với $1000$ và $7$ là cặp số đầu vào, độ hiệu quả của thuật toán về mặt thời gian được cho là khá tệ so với biến thể sau đây, biến thể sau đây thường được ưa thích hơn khi nói đến "*Thuật toán Euclid*".
 
 Giả sử cho hai số $1000$ và $7$, để thực hiện thuật toán trên cần phải thực hiện rất nhiều phép trừ.
 
@@ -66,39 +72,37 @@ Tổng kết cho tất cả điều này:
 
 Theo đó
 
-$\boxed{gcd(a\ \mathbf{rem}\ b, b)=gcd(b\ \mathbf{rem}\ a, a)=G=gcd(a,b), \{a, b\} \in \mathbb{Z}^{+}.}$
+$$\boxed{gcd(a\ \mathbf{rem}\ b, b)=gcd(b\ \mathbf{rem}\ a, a)=G=gcd(a,b), \lbrace a, b\rbrace \in \mathbb{Z}^{+}.}$$
 
 ## tính toán *gcd* với các số nguyên
 
-cho hai số nguyên dương $a$ và $b$ $(a>b)$, giả sử,  nếu $G$ được xác định là $gcd$ của $a$ và $b$:
+cho hai số nguyên dương $a$ và $b$ $(a \gt b)$, giả sử,  nếu $G$ được xác định là $gcd$ của $a$ và $b$:
 
 $$G=gcd(a,b)$$
 
 thì như đã đề cập, hiển nhiên tồn tại các số nguyên dương $e$ và $f$ là *các số nguyên tố cùng nhau* thoả mãn các biểu thức $a=eG$ và $b=fG$. 
 
-Theo đó, nếu tồn tại một số nguyên $c \neq G$ với $c$ $|$ $a,b$ thì $c$ $|$ $G$.
+Theo đó, nếu tồn tại một số nguyên $c \neq G$ với $c \mid a,b$ thì $c \mid G$.
 
-Mà cùng với đó, nếu $c$ $|$ $a,b$ thì $-c$ $|$ $a,b$ hay ta có $c$ $|$ $-a,-b$ .
+Mà cùng với đó, nếu $c \mid a,b$ thì $-c \mid a,b$ hay ta có $c \mid -a,-b$ .
 
-Còn với $G$ $|$ $a,b$ thì $-G$ $|$ $a,b$ hay ta có $G$ $|$ $-a,-b$ .
-
-
+Còn với $G \mid a,b$ thì $-G \mid a,b$ hay ta có $G \mid -a,-b$ .
 
 Rõ ràng hơn khi tổng ý cho tất cả các điều trên:
 
->*Tập ước chung của $-a$ và $-b$ cũng là tập ước chung của $a$ và $b$*
+>*Tập ước chung của* $-a$ *và* $-b$ *cũng là tập ước chung của* $a$ *và* $b$
 
 vì vậy,
 
->*Tập ước chung của $-a$ và $b$ cũng là tập ước chung của $a$ và $b$*
+>*Tập ước chung của* $-a$ *và* $b$ *cũng là tập ước chung của* $a$ *và* $b$
 
 và
 
->*Tập ước chung của $a$ và $-b$ cũng là tập ước chung của $a$ và $b$*
+>*Tập ước chung của* $a$ *và* $-b$ *cũng là tập ước chung của* $a$ *và* $b$
 
 hiển nhiên:
 
-$\boxed{gcd(-a,-b)=gcd(-a,b)=gcd(a,-b)=G=gcd(a,b).}$
+$$ \boxed{gcd(-a,-b)=gcd(-a,b)=gcd(a,-b)=G=gcd(a,b).} $$
 
 Do đó, thuật toán Euclid, tính $gcd$ của hai số nguyên dương, đủ để tính $gcd$ của hai số nguyên khác 0 tuỳ ý.
 
@@ -106,32 +110,35 @@ Do đó, thuật toán Euclid, tính $gcd$ của hai số nguyên dương, đủ
 
 Khi nhìn vào ý nghĩa của $gcd$, một điều dễ nhận ra được:
 
-> *trên tập ước chung của các số nguyên đầu vào, *số nguyên dương lớn nhất* là ước chung lớn nhất của các số đó.*
+> *trên tập ước chung của các số nguyên đầu vào, số nguyên dương lớn nhất là ước chung lớn nhất của các số đó.*
 
 Giả sử với bài toán $gcd$ bao gồm các số nguyên đầu vào $a,b$ và $c$, ta có
 
-tập ước của $a$:
-$D_a=\{x$ $|$ $a\}=\{-a,...-1,1,...,a\}$,
+tập ước của $a$: 
+
+$D_a= \lbrace x \mid a\rbrace=\lbrace-a,...-1,1,...,a\rbrace$,
 
 tập ước của $b$:
-$D_b=\{x$ $|$ $b\}=\{-b,...,-1,1,...,b\}$,
+
+$D_b=\lbrace x \mid b\rbrace=\lbrace -b,...,-1,1,...,b \rbrace$,
 
 và tập ước của $c$:
-$D_c=\{x$ $|$ $c\}=\{-c,...,-1,1,...,c\}$,
 
-nhìn chung: $gcd(a,b,c)=max\{D_a\cap D_b \cap D_c\}.$
+$D_c=\lbrace x \mid c\rbrace=\lbrace -c,...,-1,1,...,c \rbrace$,
+
+nhìn chung: $gcd(a,b,c)=max\lbrace D_a\cap D_b \cap D_c\rbrace.$
 
 Mặt khác, như đã biết
 
-$\forall x, x \neq 0:$ nếu $x$ $|$ $a,b$ thì $x$ $|$ $gcd(a,b),$ tức:
+$\forall x, x \neq 0:$ nếu $x \mid a,b$ thì $x \mid gcd(a,b),$ tức:
 
-$D_a \cap D_b=\{x$ $|$ $a,b\}=\{x$ $|$ $gcd(a,b)\}=D_{gcd(a,b)}=\{-gcd(a,b)...,-1,1,...,gcd(a,b)\}.$
+$D_a \cap D_b=\lbrace x \mid a,b\rbrace=\lbrace x \mid gcd(a,b)\rbrace=D_{gcd(a,b)}=\lbrace -gcd(a,b)...,-1,1,...,gcd(a,b)\rbrace.$
 
-$\Rightarrow gcd(a,b,c)=max\{D_{gcd(a,b)}\cap D_c\}=gcd(gcd(a,b),c).$
+$\Rightarrow gcd(a,b,c)=max\lbrace D_{gcd(a,b)} \cap D_c \rbrace=gcd(gcd(a,b),c).$
 
 Vì vậy trong trường hợp này:
 
-$\boxed{gcd(a,b,c)=gcd(gcd(a,b),c)=gcd(a,gcd(b,c))=gcd(gcd(a,c),b).}$
+$$\boxed{gcd(a,b,c)=gcd(gcd(a,b),c)=gcd(a,gcd(b,c))=gcd(gcd(a,c),b).}$$
 
 Một góc nhìn tổng quát:
 

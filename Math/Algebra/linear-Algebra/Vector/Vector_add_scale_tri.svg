@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Author: Ika, Date: 07/18/2015 -->
+<!-- Anyone can copy and revise this code without any copyright concern. -->
+<svg width="530" height="294" version="1.1" xmlns="http://www.w3.org/2000/svg" style="background-color:white">
+	<!-- Marker styles -->
+	<marker id="blue-ending"
+		viewBox="0 0 40 20" refX="20" refY="10" 
+		markerUnits="strokeWidth"
+		markerWidth="4" markerHeight="2"
+		orient="auto">
+		<path d="M 0 0 L 40 10 L 0 20 z" stroke="#0081ce" fill="#0081ce"/>
+	</marker>
+	<marker id="red-ending"
+		viewBox="0 0 40 20" refX="20" refY="10" 
+		markerUnits="strokeWidth"
+		markerWidth="4" markerHeight="2"
+		orient="auto">
+		<path d="M 0 0 L 40 10 L 0 20 z" stroke="#bc1e47)" fill="#bc1e47"/>
+	</marker>
+	<marker id="black-ending"
+		viewBox="0 0 40 20" refX="20" refY="10" 
+		markerUnits="strokeWidth"
+		markerWidth="4" markerHeight="2"
+		orient="auto">
+		<path d="M 0 0 L 40 10 L 0 20 z" stroke="rgb(0,0,0)" fill="rgb(0,0,0)"/>
+	</marker>
+
+	<!-- The separator line. -->
+	<line x1="5" y1="134" x2="500" y2="134" style="stroke:rgb(0,0,0); stroke-width:2" />
+	<!-- The above parallelogram. -->
+	<g stroke-linecap="round">
+		<line x1="10" y1="100" x2="70" y2="30" style="stroke:#0081ce; stroke-width:5" marker-end="url(#blue-ending)" />
+		<line x1="70" y1="30" x2="270" y2="30" style="stroke:#bc1e47; stroke-width:5" marker-end="url(#red-ending)" />
+		<line x1="10" y1="100" x2="270" y2="30" style="stroke:rgb(0,0,0); stroke-width:5" marker-end="url(#black-ending)" />
+	</g>
+	<!-- The below parallelogram. -->
+	<g stroke-linecap="round">
+		<line x1="10" y1="250" x2="70" y2="180" style="stroke:#0081ce; stroke-width:5" marker-end="url(#blue-ending)" />
+		<line x1="70" y1="180" x2="270" y2="180" style="stroke:r#bc1e47; opacity:0.; stroke-width:5" marker-end="url(#red-ending)" />
+		<line x1="70" y1="180" x2="470" y2="180" style="stroke:#bc1e47; stroke-width:5" marker-end="url(#red-ending)" />
+		<line x1="10" y1="250" x2="470" y2="180" style="stroke:rgb(0,0,0); stroke-width:5" marker-end="url(#black-ending)" />
+	</g>
+	<!-- Labels. -->
+	<g font-size = "40" font-family = "sans-serif">
+		<text x="15" y="60" fill="#0081ce">v</text>
+		<text x="140" y="24" fill="#bc1e47">w</text>
+		<text x="240" y="70" fill="rgb(0,0,0)">v+w</text>
+		<text x="15" y="210" fill="#0081ce">v</text>
+		<text x="200" y="170" fill="#bc1e47">2w</text>
+		<text x="400" y="220" fill="rgb(0,0,0)">v+2w</text>
+	</g>
+</svg>

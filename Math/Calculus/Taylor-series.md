@@ -1,12 +1,12 @@
 ## xấp xỉ tuyến tính (linear approximations)
 
-Với các kiểu hàm số như: hàm logarit, hàm lượng giác, hàm căn thức..., trừ một số điểm mà ta có được điều kiện dễ dàng để xác định giá trị của chúng (các điểm đặc biệt) thì thật khó để ta có thể thực hiện công việc đánh giá chúng một cách chính xác hơn được nếu giả sử rằng hiện nay không có những chiếc máy tính tồn tại. 
+Với các kiểu hàm số như: hàm logarit, hàm lượng giác, hàm căn thức..., trừ một số điểm mà ta có được điều kiện dễ dàng để xác định giá trị của chúng (các điểm đặc biệt) thì thật khó để ta có thể thực hiện công việc đánh giá chúng một cách chính xác hơn được nếu giả sử rằng hiện nay không có những chiếc máy tính tồn tại.
 
 *Vậy thì cách nào để chúng ta có thể đánh giá các kiểu hàm số như vậy một cách chính xác và dễ dàng hơn?*
 
 Đầu tiên, với $a$ là một điểm đặc biệt của hàm số $f(x)$:
 
-Giá trị đạo hàm tại $a$ của $f(x)$ không chỉ là hệ số góc $m$ (gradient) của phương trình đường tiếp tuyến $G(x)$ tại tiếp điểm $a$ của hàm số $f(x)$, ở một góc nhìn khác, nó còn là *"tốc độ biến thiên*" của hàm $f(x)$ tại $a$:
+Giá trị đạo hàm tại $a$ của $f(x)$ không chỉ là hệ số góc $m$ (gradient) của phương trình đường tiếp tuyến $G(x)$ tại tiếp điểm $a$ của hàm số $f(x)$, ở một góc nhìn khác, nó còn là "*tốc độ biến thiên*" của hàm $f(x)$ tại $a$:
 
 $$f'(a) = m$$
 
@@ -20,16 +20,15 @@ Tuy vậy, phạm vi tính gần đúng của phép tính xấp xỉ tuyến tí
 
 ## chuỗi Taylor (Taylor series)
 
-Với phép tính xấp xỉ tuyến tính đã có trước đó, một phép tính đạo hàm bậc 2 trên $G(x)$ và $f(x)$ cho thấy tốc độ biến thiên giữa $G'(x)$ và $f'(x)$ không còn đồng nhất, hay nói một cách chính xác hơn là không thể chủ động đồng nhất vì $G'(x)$ khi đó là một hàm hằng $\Leftrightarrow$ một dự đoán rằng: *"đồ thị đạo hàm bậc nhất tại điểm* $a$ *không có cùng độ dốc"* $\Leftrightarrow$ có thể nói một cách khách quan rằng trong trường hợp giả định có thể chủ động đồng nhất được $m'$ trong phép tính đạo hàm bậc 2 nhưng không thực hiện, thì $R'(x)$ được cho là *"vẫn không hề đủ gần 0"* và vì vậy $R(x)$ được cho là *"vẫn không đủ gần 0"* nên phép tính xấp xỉ *"vẫn chưa đủ tốt"*.
+Với phép tính xấp xỉ tuyến tính đã có trước đó, một phép tính đạo hàm bậc 2 trên $G(x)$ và $f(x)$ cho thấy tốc độ biến thiên giữa $G'(x)$ và $f'(x)$ không còn đồng nhất, hay nói một cách chính xác hơn là không thể chủ động đồng nhất vì $G'(x)$ khi đó là một hàm hằng $\Leftrightarrow$ một dự đoán rằng: "*đồ thị đạo hàm bậc nhất tại điểm* $a$ *không có cùng độ dốc*" $\Leftrightarrow$ có thể nói một cách khách quan rằng trong trường hợp giả định có thể chủ động đồng nhất được $m'$ trong phép tính đạo hàm bậc 2 nhưng không thực hiện, thì $R'(x)$ được cho là "*vẫn không hề đủ gần 0*" và vì vậy $R(x)$ được cho là "*vẫn không đủ gần 0*" nên phép tính xấp xỉ "*vẫn chưa đủ tốt*".
 
 Mặt khác, các hàm đa thức có cấu trúc đại số trực diện giúp rất dễ dàng trong việc tính toán đánh giá và vẽ đồ thị ở mọi điểm.
 
 Vì vậy để có thể có được một cải tiến trên phép tính xấp xỉ tuyến tính đã có, ta cần đồng ý rằng: 
 
-$G'(x)$ khi đó *"ít nhất"* phải là một hàm đa thức bậc nhất để có thể chủ động đồng nhất giá trị $m'$ $\Leftrightarrow$ sự yêu cầu khai triển một đa thức $G(x)$ bậc càng cao càng tốt sao cho $f(a)=G(a) \Leftrightarrow$ sai số $R^{n}(x)$  giữa hai đạo hàm cùng bậc của $G(x)$ và $f(x)$ càng được tiến về 0 thì $R(x)$ trong phép tính gần đúng cũng càng tiến về 0, cùng với đó phạm vi để tính gần đúng càng được mở rộng đáng kể.
+$G'(x)$ khi đó "*ít nhất*" phải là một hàm đa thức bậc nhất để có thể chủ động đồng nhất giá trị $m'$ $\Leftrightarrow$ sự yêu cầu khai triển một đa thức $G(x)$ bậc càng cao càng tốt sao cho $f(a)=G(a) \Leftrightarrow$ sai số $R^{n}(x)$  giữa hai đạo hàm cùng bậc của $G(x)$ và $f(x)$ càng được tiến về 0 thì $R(x)$ trong phép tính gần đúng cũng càng tiến về 0, cùng với đó phạm vi để tính gần đúng càng được mở rộng đáng kể.
 
 Theo ý nghĩa đó, ta sẽ có được một *tổng vô hạn* tại $a$ để đánh giá chính xác hàm số $f(x)$ theo cách *khai triển* một đa thức bậc $n \to \infty$:
-
 
 $$ f(x)=f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + ... + \frac{f^n(a)}{n!}(x-a)^n + R(x)$$ 
 

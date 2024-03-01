@@ -2,7 +2,7 @@ To set a new config/them with [**Oh My Posh**](https://github.com/jandedobbeleer
 + [PowerShell](#powershell)
 + [Bash](#bash)
 
-# PowerShell <a id="powershell"></a>
+# PowerShell
 
 This is my `Microsoft.PowerShell_profile` file on `$PROFILE` to set a new config/theme
 
@@ -64,7 +64,7 @@ New-Alias -Name gl -Value Get-GitLog
 
 ```
 
-# Bash <a id="bash"></a>
+# Bash
 
 This is my `~/.bashrc` to set a new config/theme
 

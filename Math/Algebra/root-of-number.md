@@ -11,12 +11,12 @@
 + Với $a$ là số thực dương:
     + $n$ nguyên dương:
 
-        $\sqrt[n]{a}>0$.
+        $\sqrt[n]{a} \gt 0$.
 
 + Với $a$ là số thực âm:
 	+ $n$ nguyên dương lẻ:
 
-        $\sqrt[n]{a}<0$.
+        $\sqrt[n]{a} \lt 0$.
 
     + $n$ nguyên dương chẵn:
 

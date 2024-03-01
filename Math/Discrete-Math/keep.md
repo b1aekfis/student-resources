@@ -26,9 +26,9 @@ Dãy hội tụ...
 
 # Hoán vị (Permutation)
 
-Một tập có kích thước $n$ phần tử được sắp xếp theo một trật tự: mỗi một phần tử được chọn (sắp xếp) *“theo thứ tự xác định"* tạo thành một bộ chứa các phần tử có trật tự xác định của tập. Mỗi bộ có trật tự *"xác định và không lặp"* được tính là một Hoán vị của tập. Như vậy, theo đó có thể định nghĩa:
+Một tập có kích thước $n$ phần tử được sắp xếp theo một trật tự: mỗi một phần tử được chọn (sắp xếp) *theo thứ tự xác định* tạo thành một bộ chứa các phần tử có trật tự xác định của tập. Mỗi bộ có trật tự *xác định và không lặp* được tính là một Hoán vị của tập. Như vậy, theo đó có thể định nghĩa:
 
-Cho $S$ là một tập hữu hạn gồm $n$ phần tử, gọi $I$ là tập con các số $\mathbb{N}$ từ $1$ đến $n$ (tập chỉ mục của $S$): $\{1, 2, ..., n\}$. Khi đó, mỗi Song ánh $f:I\to S$ được gọi là một Hoán vị của $S$.
+Cho $S$ là một tập hữu hạn gồm $n$ phần tử, gọi $I$ là tập con các số $\mathbb{N}$ từ $1$ đến $n$ (tập chỉ mục của $S$): $\lbrace 1, 2, ..., n\rbrace$. Khi đó, mỗi Song ánh $f:I\to S$ được gọi là một Hoán vị của $S$.
 
 Khi khai triển một Hoán vị của tập kích thước $n$ phần tử:
 
@@ -44,11 +44,11 @@ $\implies$ Như vậy, một tập có kích thước $n$ phần tử phân bi�
 
 # Chỉnh hợp
 
-Cho $S$ là một tập hữu hạn gồm $n$ phần tử và $k$ là một số tự nhiên, gọi $K$ là tập con các số $\mathbb{N}$ từ $1$ đến $k$: $\{1, 2, ..., k\}$:
+Cho $S$ là một tập hữu hạn gồm $n$ phần tử và $k$ là một số tự nhiên, gọi $K$ là tập con các số $\mathbb{N}$ từ $1$ đến $k$: $\lbrace 1, 2, ..., k\rbrace$:
 
-Với $k>n$, mỗi Ánh xạ $f:K\to S$ được gọi là một Chỉnh hợp lặp chập $k$ của $S$.
+Với $k \gt n$, mỗi Ánh xạ $f:K\to S$ được gọi là một Chỉnh hợp lặp chập $k$ của $S$.
 
-Với $k<n$, khi đó mỗi Đơn ánh $f:K\to S$ là một Chỉnh hợp không lặp (hay Chỉnh hợp) chập $k$ của $S$. Tổng số chỉnh hợp chập $k$ của $S$ được kí hiệu và được tính bằng công thức có được xuất phát từ hành vi tính tổng số hoán vị của tập:
+Với $k \lt n$, khi đó mỗi Đơn ánh $f:K\to S$ là một Chỉnh hợp không lặp (hay Chỉnh hợp) chập $k$ của $S$. Tổng số chỉnh hợp chập $k$ của $S$ được kí hiệu và được tính bằng công thức có được xuất phát từ hành vi tính tổng số hoán vị của tập:
 
 $$ A(n,k)=\frac{n!}{(n-k)!}.$$
 
@@ -80,19 +80,19 @@ Nói chung, nếu số lượng lát cắt được biểu thị $a$ và số l�
 
 $$ a = bq + r, $$
 
-$$ 0 \leq r < b, $$
+$$ 0 \leq r \lt b, $$
 
-$$ bq \leq a, q \in \Z^{0+} .$$
+$$ bq \leq a, q \in \mathbb{Z}^{0+}.$$
 
 Phép chia Euclide cũng có thể được mở rộng thành số bị chia âm (hoặc số chia âm) bằng cách sử dụng cùng một công thức nhưng thêm ràng buộc giá trị tuyệt đối cho số chia trong miền giá trị của $r$ đồng thời mở rộng miền giá trị của $q$:
 
 $$ a = bq + r, $$
 
-$$ 0 \leq r < |b|, $$
+$$ 0 \leq r \lt \vert b \vert, $$
 
-$$ bq \leq a, q \in \Z.$$
+$$ bq \leq a, q \in \mathbb{Z}.$$
 
-$q$: thương số nguyên, thương hụt (khi $r>0$)
+$q$: thương số nguyên, thương hụt (khi $r \gt 0$)
 
 $r$: số dư (số nguyên không âm)
 
