@@ -32,7 +32,7 @@ Mặt khác, chúng ta cần nhớ rằng, với bản chất của phép cộng
 
 <p align="center"><img src="NumberSetinC.svg" width="280"/></p>
 
-Với các vector cũng vậy, các vector mà được cho là *"bằng nhau"*, dù đặt ở vị trí nào trong không gian đi nữa thì ở góc nhìn toán học nói chung, chúng phải được định nghĩa rằng: "*đây là một phần tử xác định trong một tập có định nghĩa chứa các đối tượng có bản chất vector (các vector khác), gọi là tập hợp* $V$".
+Với các vector cũng vậy, các vector mà được cho là *"bằng nhau"*, dù đặt ở vị trí nào trong không gian đi nữa thì ở góc nhìn toán học nói chung, chúng phải được định nghĩa rằng: *"đây là một phần tử xác định trong một tập có định nghĩa chứa các đối tượng có bản chất vector (các vector khác), gọi là tập hợp* $V$*"*.
 
 Theo đó, trên một góc nhìn tổng quát hơn, phép cộng giữa các vector bất kì có thể được thực hiện theo một quy tắc hình học bao hàm cả *quy tắc các hình tam giác* được gọi là *"quy tắc các hình bình hành"*:
 

@@ -6,6 +6,8 @@
 
 # Ước số chung lớn nhất (*gcd*)
 
+<sup >*greatest common divisor* </sup>
+
 Mối quan hệ chia hết trên tập số nguyên nói rằng: nếu $b \mid a$ thì: $-b \mid a$, với $-b$ gọi là số đối của $b.$ Vì vậy:
 
 *Ước số chung lớn nhất* ($gcd$) của hai hay nhiều số nguyên (có ít nhất một số trong số đó $\ne 0$) được định nghĩa là *số nguyên dương lớn nhất* là ước số chung của các số đó.
@@ -36,7 +38,7 @@ Theo đó, một mặt ta có được biểu thức $a-b=(e-f)G$, mặc khác h
 
 $$\boxed{gcd(a-b,b)=G=gcd(a,b), \lbrace a,b \rbrace \in \mathbb{Z}^{+}, a \gt b.}$$
 
-***Hạn chế của thuật toán***: khi hai số có khoảng cách xa trên trục số, phải thực hiện rất nhiều số phép trừ cho đến khi đạt được cặp số bằng nhau. Chẳng hạn trường hợp với $1000$ và $7$ là cặp số đầu vào, độ hiệu quả của thuật toán về mặt thời gian được cho là khá tệ so với biến thể sau đây, biến thể sau đây thường được ưa thích hơn khi nói đến "*Thuật toán Euclid*".
+***Hạn chế của thuật toán***: khi hai số có khoảng cách xa trên trục số, phải thực hiện rất nhiều số phép trừ cho đến khi đạt được cặp số bằng nhau. Chẳng hạn trường hợp với $1000$ và $7$ là cặp số đầu vào, độ hiệu quả của thuật toán về mặt thời gian được cho là khá tệ so với biến thể sau đây, biến thể sau đây thường được ưa thích hơn khi nói đến *"Thuật toán Euclid"*.
 
 Giả sử cho hai số $1000$ và $7$, để thực hiện thuật toán trên cần phải thực hiện rất nhiều phép trừ.
 
