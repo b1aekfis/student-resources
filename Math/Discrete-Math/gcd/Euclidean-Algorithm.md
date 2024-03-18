@@ -6,9 +6,9 @@
 
 # Ước số chung lớn nhất (*gcd*)
 
-<sup >*greatest common divisor* </sup>
+<sup> *greatest common divisor (gcd)* </sup>
 
-Mối quan hệ chia hết trên tập số nguyên nói rằng: nếu $b \mid a$ thì: $-b \mid a$, với $-b$ gọi là số đối của $b.$ Vì vậy:
+Mối quan hệ chia hết trên tập số nguyên nói rằng: nếu $b \mid a$ (đọc là $b$ là ước của $a$) thì: $-b \mid a$, với $-b$ gọi là số đối của $b.$ Vì vậy:
 
 *Ước số chung lớn nhất* ($gcd$) của hai hay nhiều số nguyên (có ít nhất một số trong số đó $\ne 0$) được định nghĩa là *số nguyên dương lớn nhất* là ước số chung của các số đó.
 
@@ -40,31 +40,33 @@ $$\boxed{gcd(a-b,b)=G=gcd(a,b), \lbrace a,b \rbrace \in \mathbb{Z}^{+}, a \gt b.
 
 ***Hạn chế của thuật toán***: khi hai số có khoảng cách xa trên trục số, phải thực hiện rất nhiều số phép trừ cho đến khi đạt được cặp số bằng nhau. Chẳng hạn trường hợp với $1000$ và $7$ là cặp số đầu vào, độ hiệu quả của thuật toán về mặt thời gian được cho là khá tệ so với biến thể sau đây, biến thể sau đây thường được ưa thích hơn khi nói đến *"Thuật toán Euclid"*.
 
-Giả sử cho hai số $1000$ và $7$, để thực hiện thuật toán trên cần phải thực hiện rất nhiều phép trừ.
+Giả sử cho hai số $1000$ và $7$, để thực hiện thuật toán trên cần phải thực hiện rất nhiều phép trừ, cụ thể cần thực hiện 142 bước trừ $7$ trên số lớn hơn trong cặp số cho đến khi độ lớn hơn trong phép so sánh cặp số đảo chiều hoặc cân bằng (điểm dừng thuật toán), ở đây là khi giá trị hiệu đạt bằng $6$:
 
-cụ thể cần thực hiện 142 bước trừ $7$ trên số lớn hơn trong cặp số cho đến khi độ lớn hơn trong phép so sánh cặp số đảo chiều hoặc cân bằng (điểm dừng thuật toán), cụ thể ở đây là khi giá trị hiệu đạt bằng $6$:
-
-$1000-7-7-7-7...-7 = 6$
+$$1000-7-7-7-7...-7 = 6$$
 
 Thật ra, điều này đồng nghĩa với việc đạt được số $r_0$ trong một phép chia Euclid trên số lớn hơn của cặp số đầu vào:
 
-$1000\ \mathbf{rem}\ 7=1000-(7.142) = 6$
+$$1000\ \mathbf{rem}\ 7=1000-(7.142) = 6$$
 
 tiếp tục 1 bước trừ $6$ trên số lớn hơn để giá trị hiệu đạt bằng $1$:
 
-$7-6 = 1$
+$$7-6 = 1$$
 
 điều này đồng nghĩa với việc đạt được số $r_1$ trong một phép chia Euclid trên số lớn hơn của cặp số mới thu được khi độ lớn hơn trong phép so sánh cặp số đảo chiều:
 
-$7\ \mathbf{rem}\ 6=7-(6.1) = 1$
+$$7\ \mathbf{rem}\ 6=7-(6.1) = 1$$
 
 tiếp tục 5 bước trừ $1$ trên số lớn hơn để giá trị hiệu đạt bằng $1$ (cân bằng):
 
-$6-1-1-1-1-1=1 \rightarrow 1-1=0$, tìm thấy $gcd$ khi hai số bằng nhau.
+$$6-1-1-1-1-1=1 \rightarrow 1-1=0$$ 
 
-điều này đồng nghĩa với việc đạt được số $r_2$ trong một phép chia Euclid trên số lớn hơn của cặp số mới thu được khi độ lớn hơn trong phép so sánh cặp số đảo chiều:
+và tìm thấy $gcd$ khi hai số bằng nhau.
 
-$6\ \mathbf{rem}\ 1=6-(1.6)=0$, tìm thấy $gcd$ khi $r_2=0.$
+Điều này đồng nghĩa với việc đạt được số $r_2$ trong một phép chia Euclid trên số lớn hơn của cặp số mới thu được khi độ lớn hơn trong phép so sánh cặp số đảo chiều:
+
+$$6\ \mathbf{rem}\ 1=6-(1.6)=0$$
+
+và tìm thấy $gcd$ khi $r_2=0.$
 
 Như vậy, có thể thấy trong trường hợp này thuật toán Euclid với phép trừ thực hiện hơn 100 bước để đảo chiều độ lớn hơn trong phép so sánh cặp số, trong khi với phép toán $\mathbf{rem}$ chỉ tốn đúng một bước để đảo chiều với cặp số nguyên dương.
 
@@ -114,29 +116,27 @@ Khi nhìn vào ý nghĩa của $gcd$, một điều dễ nhận ra được:
 
 > *trên tập ước chung của các số nguyên đầu vào, số nguyên dương lớn nhất là ước chung lớn nhất của các số đó.*
 
-Giả sử với bài toán $gcd$ bao gồm các số nguyên đầu vào $a,b$ và $c$, ta có
+Giả sử với bài toán $gcd$ bao gồm các số nguyên đầu vào $a,b$ và $c$, ta có các tập ước của mỗi số gồm:
 
-tập ước của $a$: 
+$$D_a= \lbrace x \mid a\rbrace=\lbrace-a,...-1,1,...,a\rbrace,$$
 
-$D_a= \lbrace x \mid a\rbrace=\lbrace-a,...-1,1,...,a\rbrace$,
+$$D_b=\lbrace x \mid b\rbrace=\lbrace -b,...,-1,1,...,b \rbrace,$$
 
-tập ước của $b$:
+$$D_c=\lbrace x \mid c\rbrace=\lbrace -c,...,-1,1,...,c \rbrace,$$
 
-$D_b=\lbrace x \mid b\rbrace=\lbrace -b,...,-1,1,...,b \rbrace$,
+nhìn chung: 
 
-và tập ước của $c$:
+$$gcd(a,b,c)=max\lbrace D_a\cap D_b \cap D_c\rbrace.$$
 
-$D_c=\lbrace x \mid c\rbrace=\lbrace -c,...,-1,1,...,c \rbrace$,
+Mặt khác, 
 
-nhìn chung: $gcd(a,b,c)=max\lbrace D_a\cap D_b \cap D_c\rbrace.$
+như đã biết $\forall x \neq 0$ nếu $x \mid a,b$ thì $x \mid gcd(a,b)$, 
 
-Mặt khác, như đã biết
+xét trên phần giao giữa $D_a$ và $D_b$:
 
-$\forall x, x \neq 0:$ nếu $x \mid a,b$ thì $x \mid gcd(a,b),$ tức:
+$$D_a \cap D_b=\lbrace x \mid a,b\rbrace=\lbrace x \mid gcd(a,b)\rbrace=D_{gcd(a,b)}=\lbrace -gcd(a,b)...,-1,1,...,gcd(a,b)\rbrace.$$
 
-$D_a \cap D_b=\lbrace x \mid a,b\rbrace=\lbrace x \mid gcd(a,b)\rbrace=D_{gcd(a,b)}=\lbrace -gcd(a,b)...,-1,1,...,gcd(a,b)\rbrace.$
-
-$\Rightarrow gcd(a,b,c)=max\lbrace D_{gcd(a,b)} \cap D_c \rbrace=gcd(gcd(a,b),c).$
+$$\Rightarrow gcd(a,b,c)=max\lbrace D_{gcd(a,b)} \cap D_c \rbrace=gcd(gcd(a,b),c).$$
 
 Vì vậy trong trường hợp này:
 

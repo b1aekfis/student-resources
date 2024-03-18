@@ -1,3 +1,7 @@
+- [Vector (math)](#vector-math)
+  - [Vector đơn vị](#vector-đơn-vị)
+  - [Không gian Vector](#không-gian-vector)
+
 # Vector (math)
 
 Khi kiến thức vector chưa được xây dựng một cách có hệ thống, ý tưởng về những *"đoạn thẳng định hướng"* đã sớm xuất hiện rất nhiều trong các công trình cơ học, hay khi có số phức, người ta cũng hình thành nên ý tưởng biễu diễn số phức dưới dạng hình học là những đoạn thẳng định hướng,... khiến nó trở thành đối tượng đáng quan tâm trong mắt các nhà toán học thế kỷ 19 như một điều thiết yếu.
@@ -6,11 +10,7 @@ Một đoạn thẳng được định hướng trong không gian Euclid (không
 
 Một vector v được viết kí hiệu: $\mathbf{v}$ (v in đậm) hoặc $\vec{\text{v}}$
 
-####
-
 <p align="center"><img src="Vector_from_A_to_B.svg" width="280"/></p>
-
-####
 
 hoặc khi đề cập đến độ dài hoặc độ lớn của nó ta viết: $\vert \mathbf{v}\vert$ hoặc $\vert \vec{\text{v}}\vert$, đôi khi $\Vert \mathbf{v}\Vert$ hoặc $\Vert \vec{\text{v}} \Vert$,...
 
@@ -28,7 +28,9 @@ nói chung, trong không gian Euclid:
 
 <p align="center"><img src="Vector_add_scale_tri.svg" width="280"/></p>
 
-Mặt khác, chúng ta cần nhớ rằng, với bản chất của phép cộng, phép cộng giữa các đối tượng không có cùng định nghĩa, hoặc không có cùng bản chất, thì phép tính đó vô nghĩa. Giống như các đối tượng có bản chất số học được tập hợp trong cùng một tập hợp có bản chất số học, chẳng hạn: $\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}\subset...\subset S_\text{numbers}$:
+Mặt khác, chúng ta cần nhớ rằng, với bản chất của phép cộng, phép cộng giữa các đối tượng không có cùng định nghĩa, hoặc không có cùng bản chất, thì phép tính đó vô nghĩa. Giống như các đối tượng có bản chất số học được tập hợp trong cùng một tập hợp có bản chất số học, chẳng hạn: 
+
+$$\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}\subset...\subset S_\text{numbers}$$
 
 <p align="center"><img src="NumberSetinC.svg" width="280"/></p>
 
@@ -47,7 +49,7 @@ Trong không gian Euclide, vector có độ dài được quy ước bằng 1 đ
 Trong [*Đại số trừu tượng*](https://en.wikipedia.org/wiki/Abstract_algebra), tập hợp $V$ mà ta nói đến bên trên được trừu tượng hoá thành đối tượng được gọi là *Không gian vector (vector space)*.
 
 <p align="center"><img src="Vector_space_illust.svg"
- width="180"/></center>
+ width="180"/></p>
 
 Không gian vector là một sự trừu tượng hoá trên sự kết hợp giữa tập $V$ và trường vô hướng $F.$
 

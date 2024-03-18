@@ -1,3 +1,7 @@
+- [xấp xỉ tuyến tính (linear approximations)](#xấp-xỉ-tuyến-tính-linear-approximations)
+- [chuỗi Taylor (Taylor series)](#chuỗi-taylor-taylor-series)
+- [khai triển Maclaurin](#khai-triển-maclaurin)
+
 ## xấp xỉ tuyến tính (linear approximations)
 
 Với các kiểu hàm số như: hàm logarit, hàm lượng giác, hàm căn thức..., trừ một số điểm mà ta có được điều kiện dễ dàng để xác định giá trị của chúng (các điểm đặc biệt) thì thật khó để ta có thể thực hiện công việc đánh giá chúng một cách chính xác hơn được nếu giả sử rằng hiện nay không có những chiếc máy tính tồn tại.
